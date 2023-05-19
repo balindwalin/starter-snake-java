@@ -22,11 +22,11 @@ public class SnakeTest {
         OBJECT_MAPPER.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
     }
 
-    private Snake.Handler handler;
+    private BattlesnakeBot.Handler handler;
 
     @BeforeEach
     void setUp() {
-        handler = new Snake.Handler();
+        handler = new BattlesnakeBot.Handler();
     }
 
     @Test

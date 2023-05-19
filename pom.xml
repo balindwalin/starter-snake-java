@@ -39,6 +39,13 @@
             <version>5.2.0</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+        		<groupId>org.projectlombok</groupId>
+        		<artifactId>lombok</artifactId>
+        		<version>1.18.26</version>
+    		    <scope>provided</scope>
+	      </dependency>
     </dependencies>
 
     <build>
@@ -52,7 +59,7 @@
                     <arguments>
                         <argument>-classpath</argument>
                         <classpath/>
-                        <argument>com.battlesnake.starter.Snake</argument>
+                        <argument>com.battlesnake.starter.BattlesnakeBot</argument>
                     </arguments>
                 </configuration>
             </plugin>
@@ -85,7 +92,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        com.battlesnake.starter.Snake
+                                        com.battlesnake.starter.BattlesnakeBot
                                     </mainClass>
                                 </manifest>
                             </archive>
